@@ -1,0 +1,22 @@
+@startuml
+
+actor :new actor:
+
+usecase Identificarse
+usecase Pagar
+usecase (Elegir mensajero)
+usecase Confirmar
+usecase Registrarse
+usecase (Pagar con tarjeta)
+usecase (Pagar con transferencia)
+
+:new actor: -- Identificarse
+:new actor: -- Pagar
+:new actor: -- (Elegir mensajero)
+:new actor: -- Confirmar
+
+Registrarse ..> Identificarse : extend
+(Pagar con transferencia) ..|> Pagar
+(Pagar con tarjeta) ..|> Pagar
+
+@enduml
