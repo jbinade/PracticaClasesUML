@@ -10,6 +10,6 @@ Usuario -- (Cerrar sesion)
 
 Administrador -- (Registrar usuario)
 Administrador -- (Instalar programa)
-Administrador --|> Usuario
+Usuario <|-- Administrador
 
 @enduml

@@ -6,8 +6,8 @@ ciudadano -- (Registrar entrada)
 
 actor "ciudadano extranjero"
  "ciudadano extranjero" -- (Tomar huellas)
- "ciudadano extranjero" --|> ciudadano
- (Tomar huellas) ..> (Registrar entrada) : extend
+ ciudadano <|-- "ciudadano extranjero"
+ (Registrar entrada) <.. (Tomar huellas) : extend
 
 
 @enduml
