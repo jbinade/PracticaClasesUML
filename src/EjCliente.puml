@@ -1,0 +1,16 @@
+@startuml
+
+actor cliente
+actor restaurante
+
+rectangle {
+    (Mostrar menu)
+    (Pedir comida)
+}
+
+cliente -- (Mostrar menu)
+cliente -- (Pedir comida)
+restaurante -- (Mostrar menu)
+restaurante -- (Entregar comida)
+
+@enduml
