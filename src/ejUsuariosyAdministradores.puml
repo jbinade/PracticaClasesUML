@@ -1,0 +1,15 @@
+@startuml
+
+actor Usuario
+actor Administrador
+
+Usuario -- (Iniciar sesion)
+Usuario -- (Recuperar contraseña)
+Usuario -- (Modificar contraseña)
+Usuario -- (Cerrar sesion)
+
+Administrador -- (Registrar usuario)
+Administrador -- (Instalar programa)
+Administrador --|> Usuario
+
+@enduml
