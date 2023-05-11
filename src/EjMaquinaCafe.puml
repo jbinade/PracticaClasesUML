@@ -1,0 +1,20 @@
+@startuml
+
+actor cliente
+usecase (Meter dinero)
+usecase (Pedir azucar)
+usecase (Pedir producto)
+usecase (Cancelar)
+usecase (Devolver dinero)
+
+cliente -- (Meter dinero)
+cliente -- (Pedir azucar)
+cliente -- (Pedir producto)
+cliente -- (Cancelar)
+
+(Cancelar) ..> (Devolver dinero) : include
+(Pedir producto) ..> (Devolver dinero) : include
+
+
+
+@enduml
