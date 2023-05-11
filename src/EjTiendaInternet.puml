@@ -16,7 +16,7 @@ usecase (Pagar con transferencia)
 :new actor: -- Confirmar
 
 Registrarse ..> Identificarse : extend
-(Pagar con transferencia) ..|> Pagar
-(Pagar con tarjeta) ..|> Pagar
+(Pagar con transferencia) --|> Pagar
+(Pagar con tarjeta) --|> Pagar
 
 @enduml
