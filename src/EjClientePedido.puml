@@ -1,11 +1,13 @@
 @startuml
-'https://plantuml.com/sequence-diagram
 
-autonumber
+actor cliente
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+cliente -- (confirmar pedido)
+cliente -- (cancelar pedido)
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+(confirmar pedido) ..> (devolver cambio) : include
+(cancelar pedido) ..> (devolver cambio) : include
+
+
+
 @enduml
